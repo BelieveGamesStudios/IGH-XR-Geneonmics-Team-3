@@ -8330,7 +8330,7 @@ GameObject:
   - component: {fileID: 926908842}
   - component: {fileID: 926908843}
   - component: {fileID: 926908844}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cooling area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12381,14 +12381,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415091631}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.66294, w: 0.7486725}
-  m_LocalPosition: {x: 1.372, y: 1.006, z: 1.301}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1.3729024, y: 1.025, z: 1.186}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 177781609}
   m_Father: {fileID: 8375586068226691489}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 83.049}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!136 &1415091633
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26774,7 +26774,7 @@ RectTransform:
   m_GameObject: {fileID: 4015128326027642718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5849765079795266119}
@@ -26782,7 +26782,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 4}
+  m_AnchoredPosition: {x: 0, y: 0.263}
   m_SizeDelta: {x: 950, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4015128326027642715
@@ -27544,7 +27544,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3513105219668439878}
   - component: {fileID: 4290485931927415293}
-  - component: {fileID: 4290485931927415295}
   - component: {fileID: 4290485931927415294}
   - component: {fileID: 4290485931927415296}
   - component: {fileID: 4290485931927415297}
@@ -27603,78 +27602,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4290485931927415295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4290485931927415292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
-  m_InteractionLayers:
-    m_Bits: 1
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 0
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
 --- !u!95 &4290485931927415296
 Animator:
   serializedVersion: 7
@@ -30742,7 +30669,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5849765078928627011}
   m_HandleRect: {fileID: 5849765079789038251}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -33330,7 +33257,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5849765080332959052}
   m_HandleRect: {fileID: 5849765080163835699}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -34398,16 +34325,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'You can scroll this window using the scrollbars, or by using the thumbstick
-    on your controller.
-
-
-    The controller ray must be pointed at the UI element
-    you wish to scroll for the thumbstick to work.
-
-
-    Vertical and horizontal
-    scrolling are both supported.'
+  m_Text: Bunsen burner is used for heating solutions
 --- !u!114 &5967689310942757407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43918,7 +43836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 8695338826617004761}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -44043,7 +43961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8695338825868738550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44310,7 +44228,7 @@ RectTransform:
   m_Father: {fileID: 8695338826178131376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

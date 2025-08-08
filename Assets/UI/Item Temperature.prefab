@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 189870021324685800}
   - component: {fileID: 3887942751393354813}
   - component: {fileID: 6701747896979254525}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Temperature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 6764475290322842232}
   - component: {fileID: 1850697359974654454}
   - component: {fileID: 6072442048874661724}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 6297072042475737310}
   - component: {fileID: 8405969073785952168}
   - component: {fileID: 3551747515004070107}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Scroll UI Sample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 3249951825593172793}
   - component: {fileID: 6612869837277278869}
   - component: {fileID: 2496413800470819776}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Item Temperature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,6 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   temperatureText: {fileID: 6701747896979254525}
+  temperatureChangeRate: 1
 --- !u!65 &2496413800470819776
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -472,7 +473,7 @@ GameObject:
   - component: {fileID: 4797669957629426808}
   - component: {fileID: 4442652046164657916}
   - component: {fileID: 1713083518872356254}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: UI Sample
   m_TagString: Untagged
   m_Icon: {fileID: 0}

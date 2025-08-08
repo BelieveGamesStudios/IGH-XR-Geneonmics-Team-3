@@ -39,9 +39,9 @@ namespace TeamThree
         void UpdateTemps()
         {
             if (inFridge)
-                currentTemperature += temperatureChangeRate * Time.deltaTime;
-            else
                 currentTemperature -= temperatureChangeRate * Time.deltaTime;
+            else
+                currentTemperature += temperatureChangeRate * Time.deltaTime;
 
             temperatureText.text = currentTemperature.ToString("0") + "°C";
         }

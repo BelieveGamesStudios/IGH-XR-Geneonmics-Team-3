@@ -20,7 +20,7 @@ namespace TeamThree
             {
                ItemTemperature coolAgent = Instantiate(temperatureUI, item.transform);
                 Transform coolAgentTransform = coolAgent.transform;
-                coolAgentTransform.localPosition = new Vector3(0,0,0.1f);
+                coolAgentTransform.localPosition = new Vector3(0,0,-0.1f);
             }
         }
     }

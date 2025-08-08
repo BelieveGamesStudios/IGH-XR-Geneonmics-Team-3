@@ -8,7 +8,7 @@ namespace TeamThree
     {
         [SerializeField] private TextMeshProUGUI temperatureText;
 
-        private float temperatureChangeRate=1f;
+        [SerializeField] private float temperatureChangeRate=1f;
         private float currentTemperature;
         private bool inFridge = false;
         private void OnEnable()
@@ -43,7 +43,7 @@ namespace TeamThree
             else
                 currentTemperature -= temperatureChangeRate * Time.deltaTime;
 
-            temperatureText.text = currentTemperature.ToString("1") + "°C";
+            temperatureText.text = currentTemperature.ToString("0") + "°C";
         }
     }
 }

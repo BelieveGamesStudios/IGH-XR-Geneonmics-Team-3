@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace TeamSix
+namespace TeamThree
 {
     [RequireComponent(typeof(NavMeshAgent))]
     public class LabAssistant : MonoBehaviour

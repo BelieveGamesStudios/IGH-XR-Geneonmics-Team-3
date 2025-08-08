@@ -2,7 +2,7 @@ using Believe.Games.Studios;
 using UnityEngine.UI;
 using UnityEngine;
 
-namespace TeamSix
+namespace TeamThree
 {
     public class Fridge : CustomInteractable
     {

@@ -1,7 +1,7 @@
 using Believe.Games.Studios;
 using UnityEngine;
 
-namespace TeamSix
+namespace TeamThree
 {
     [RequireComponent(typeof(AudioSource))]
     public class Glassware : CustomInteractable

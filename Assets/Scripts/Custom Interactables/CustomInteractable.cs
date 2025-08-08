@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TeamSix
+namespace TeamThree
 {
     public abstract class CustomInteractable : MonoBehaviour
     {

@@ -5,7 +5,7 @@ namespace TeamThree
 {
     public class BunsenBurner : CustomInteractable
     {
-        private bool fireOn = false;
+        public bool FireOn = false;
         private ParticleSystem fire;
         private AudioSource fireSource;
         [SerializeField] private TextMeshProUGUI temperatureText;
@@ -15,10 +15,10 @@ namespace TeamThree
        
         public override void Interact()
         {
-            fireOn = !fireOn;
+            FireOn = !FireOn;
 
 
-            if (fireOn)
+            if (FireOn)
             {
                 fire.Play();
                 fireSource.Play();
@@ -45,9 +45,11 @@ namespace TeamThree
             ObjectTemperature objectTemp = other.GetComponentInChildren<ObjectTemperature>();
             if(objectTemp!=null)
             {
-                triggerMaterial.color = Color.green;
+                var color = Color.green;
+                color.a = 0.2f;
+                triggerMaterial.color = color;
 
-                if (fireOn)
+                if (FireOn)
                     objectTemp.currentTemperature += heatingRate;
 
 
@@ -59,7 +61,9 @@ namespace TeamThree
             ObjectTemperature objectTemp = other.GetComponentInChildren<ObjectTemperature>();
             if(objectTemp!=null)
             {
-                triggerMaterial.color = Color.red;
+                var color = Color.green;
+                color.a = 0.2f;
+                triggerMaterial.color = color;
                 temperatureText.text = "--°C";
             }
         }

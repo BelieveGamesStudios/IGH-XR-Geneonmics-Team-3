@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace TeamThree
 {
@@ -8,6 +9,7 @@ namespace TeamThree
         private Animator containerAnimator;
         private int turn = Animator.StringToHash("Turn");
         private bool actionTriggered = false;
+        [SerializeField] private UnityEvent onTaskComplete;
         private void OnEnable()
         {
             containerAnimator = GetComponent<Animator>();
@@ -22,6 +24,7 @@ namespace TeamThree
         }
         void NextTask()
         {
+            onTaskComplete?.Invoke();
             GelElectrophoresisProcedure.Instance.NextStep();
             this.gameObject.SetActive(false);
         }

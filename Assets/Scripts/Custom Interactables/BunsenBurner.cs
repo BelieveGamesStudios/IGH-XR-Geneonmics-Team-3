@@ -61,7 +61,7 @@ namespace TeamThree
             ObjectTemperature objectTemp = other.GetComponentInChildren<ObjectTemperature>();
             if(objectTemp!=null)
             {
-                var color = Color.green;
+                var color = Color.red;
                 color.a = 0.2f;
                 triggerMaterial.color = color;
                 temperatureText.text = "--°C";
